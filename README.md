@@ -32,3 +32,12 @@ This code was trained on librispeech-train-clean dataset, tested on librispeech-
 
 ## More Details  
   If you want to know more details, please read [deep_speaker_report.pdf](deep_speaker_report.pdf) (English) or [deep_speaker实验报告.pdf](deep_speaker实验报告.pdf) (中文). 
+
+## Tips for getting started
+https://github.com/Walleclipse/Deep_Speaker-speaker_recognition_system/issues/1
+
+1. preprare data. You want to prepare the data just as Librispeech Data format or KALDI data format. Please check folder audio/LibriSpeechSamples/train-clean-100 . Folder was named by speaker name, and each speaker contains some .wav audios
+2. If you data is kaldi format just run python kaldi_form_preprocess.py , If data format similar to Librispeech Data just run python preprocess.py
+3. python train.py to training your model . Model is defined in model.py. EER during training will be saved。
+4. use utils.py to plot_loss_acc.
+5. I am sorry. I am not quite understant of your last question "speech library you are using to implement this code?"
